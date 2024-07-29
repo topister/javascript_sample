@@ -30,7 +30,19 @@ function calc() {
   purchases = [];
   priceElement.value= "";
   numberElement.value = "";
+  const less2k = 500;
+  const great2k = 250;
+  if(sum < 2000){
+    const total = sum + less2k
+    alert(`Shipping fee is ${less2k} yen. The total is ${total} yen`);
+  }else if(sum > 2000 && sum < 3000){
+    const total = sum + great2k;
+    alert(`Shipping fee is ${great2k} yen. The total is ${total} yen`)
+  }else{
+    alert(`Shipping fee is free. The total is ${sum} yen`)
+  }
 }
+
 
 
 // let { name, age } = person;

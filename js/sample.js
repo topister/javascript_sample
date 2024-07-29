@@ -70,5 +70,23 @@
 // let age = 50;
 // console.log(`Topister is ${age} old!`);
 
-let { name, age } = person;
-console.log(person)
+// let { name, age } = person;
+// console.log(person)
+
+// do...while loop
+// let num = 1;
+// do{
+//     console.log(num);
+//     num++;
+// }while(num < 5);
+
+// for loop
+// for(let num = 1; num < 10; num++){
+//     console.log(num);
+// }
+
+// for...of: you can use this to loop through the elements of an arrray
+const myArray = [1, 2, 3, 4, 5, 6];
+for(const num of myArray){
+    console.log(num);
+}
